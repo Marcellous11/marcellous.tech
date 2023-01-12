@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+	transition: all .5s ease;
+}
+
+.WorkHis {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(159, 90, 64);
+	flex-direction: row;
+	justify-content: center;
+}
+
+.WorkHis-collection {
+	display: flex;
+	width: 90%;
+	height: 100%;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 3em;
+	justify-content: center;
+}
+
+.WorkHis-collection h2 {
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.513);
+	margin: 2em 0;
+	margin-bottom: .5em;
+}
+
+.WorkHis-collection-hist {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+}
+.WorkHis-collection-hist h2 {
+	font-size: 14rem;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.513);
+	margin: 0;
+	transition: all 1s;
+}
+
+.WorkHis-position h3 {
+	font-size: 1.5em;
+}
+.WorkHis-workContent {
+	display: flex;
+	height: 40%;
+	width: 80%;
+	border-radius: 2em;
+}
+
+.WorkHis-titles {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: rgba(0, 0, 0, 0.274);
+	border-radius: 1em 0 0 1em;
+	flex: 20%;
+}
+.WorkHis-titles h3 {
+	position: relative;
+	border-radius: 2em;
+	margin: 0 3%;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all .5s;
+
+	color: gray;
+}
+.WorkHis-titles h3:hover {
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.WorkHis-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-right: 1rem;
+	margin-left: 1rem;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.083);
+	border-radius: 0 1em 1em 0;
+	/* flex: 80%; */
+	/* overflow: hidden; */
+}
+.WorkHis-description div ul {
+	margin-bottom: 0;
+}
+/* li with job description */
+.WorkHis-description div ul li {
+	/* display: block; */
+	line-height: 1.9rem;
+	font-size: 1.2rem;
+	color: rgb(1, 0, 0);
+	margin: 0;
+	border-radius: 0 1em 1em 0;
+}
+.WorkHis-description div ul li b {
+	color: rgb(57, 57, 57);
+}
+
+/* parent element to ul and grid */
+/* .WorkHis-description div {
+	display: flex;
+} */
+
+/*  the skill collection */
+.WorkHis-description-skills {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-items: center;
+	align-items: center;
+	color: bisque;
+	width: 100%;
+}
+/* iso skills */
+.WorkHis-description-skills p {
+	display: block;
+	color: white;
+	margin: 3%;
+}
+
+/* iphone */
+@media (max-width: 521px) {
+	.WorkHis-workContent {
+		flex-direction: column;
+	}
+	.WorkHis-collection-hist {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		justify-content: flex-start;
+		margin-top: 9rem;
+	}
+	.WorkHis-collection-hist h2 {
+		font-size: 4rem;
+		margin: 1rem 0;
+	}
+	.WorkHis-titles {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0, 0, 0, 0.274);
+		padding: .8rem;
+		border-radius: 1em 1em 0 0;
+		/* flex: 20% 1; */
+	}
+	.WorkHis-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		/* padding-top: 1rem; */
+		margin: 0rem;
+		margin-top: 1rem;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.083);
+		border-radius: 0 0 1em 1em;
+		/* flex: 80% 1; */
+	}
+	.WorkHis-description div ul li {
+		/* display: block; */
+		line-height: 1.4rem;
+		font-size: 1.2rem;
+		color: rgb(1, 0, 0);
+		margin: 0;
+		border-radius: 0 1em 1em 0;
+	}
+}
+
+/* ipad */
+@media (min-width: 521px) and (max-width: 850px) {
+	.WorkHis-workContent {
+		flex-direction: column;
+	}
+	.WorkHis-collection {
+		display: flex;
+		width: 90%;
+		height: 95%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.WorkHis-collection-hist {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width: 100%;
+		height: 60%;
+		justify-content: space-between;
+		margin-top: 0rem;
+	}
+	.WorkHis-collection-hist h2 {
+		font-size: 3.7rem;
+		margin: 1rem 0;
+		margin-bottom: 1rem;
+		rotate: 180deg;
+		writing-mode: tb-rl;
+		white-space: nowrap;
+	}
+	.WorkHis-titles {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0, 0, 0, 0.274);
+		padding: .8rem;
+		border-radius: 1em 1em 0 0;
+	}
+	.WorkHis-workContent {
+		display: flex;
+		height: 139%;
+		width: 91%;
+		border-radius: 2em;
+	}
+	.WorkHis-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 0rem;
+		margin-top: rem;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.083);
+		border-radius: 0 0 1em 1em;
+	}
+	.WorkHis-description div ul li {
+		/* display: block; */
+		line-height: 1.3rem;
+		font-size: 1.2rem;
+		color: rgb(1, 0, 0);
+		margin: 0;
+		border-radius: 0 1em 1em 0;
+	}
+	.WorkHis-description div ul {
+		margin: 0;
+	}
+	/* individual boxes */
+	.WorkHis-description-skills p {
+		display: block;
+		color: white;
+		padding: 0;
+		margin: .35rem;
+	}
+}

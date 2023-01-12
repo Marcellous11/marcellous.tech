@@ -1,0 +1,117 @@
+.Landing {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	background-color: rgba(213, 185, 157, 0.997);
+	/* background-image: url("../images/davinciman2.png"); */
+	justify-content: center;
+	position: relative;
+}
+.Landing img {
+	z-index: 0;
+	position: absolute;
+	height: 100%;
+	width: 90%;
+	opacity: .3;
+	right: 0;
+}
+/* @media screen and (min-width: 400px) {
+	.Landing {
+		background-color: lightgreen;
+	}
+} */
+
+.Landing-allContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 90%;
+	width: 90%;
+	z-index: 1;
+}
+
+#name {
+	transition: color 2s;
+}
+.Landing-allContent > * {
+	font-weight: 500;
+}
+
+.Landing-allContent div b {
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.513);
+}
+
+.Landing-gretting {
+	color: rgb(0, 0, 0);
+	font-size: 3.5rem;
+}
+.Landing-gretting b {
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+}
+.Landing-Name {
+	color: rgb(101, 103, 67);
+	font-size: 12rem;
+	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+	margin: 1rem 0;
+}
+.Landing-statement {
+	color: rgba(0, 0, 0, 0.707);
+	font-size: 3.5rem;
+}
+/* iphone */
+@media screen and (max-width: 521px) {
+	.Landing-gretting b {
+		color: rgb(255, 255, 255);
+		font-size: 4rem;
+		margin: 2rem 0;
+	}
+	.Landing-gretting b::after {
+		content: "\A";
+		white-space: pre-line;
+	}
+	.Landing-gretting {
+		font-size: 2.7rem;
+	}
+	.Landing-Name {
+		font-size: 4.5rem;
+	}
+	.Landing-statement {
+		color: rgba(0, 0, 0, 0.707);
+		font-size: 2.4rem;
+		line-height: 3.3rem;
+	}
+}
+
+/* ipad */
+@media (min-width: 521px) and (max-width: 850px) {
+	.Landing-gretting b {
+		color: rgb(255, 255, 255);
+		font-size: 4rem;
+		margin: 1rem 0;
+	}
+	.Landing-gretting {
+		font-size: 2.7rem;
+	}
+	.Landing-Name {
+		font-size: 7.5rem;
+		margin: 0;
+	}
+	.Landing-statement {
+		color: rgba(0, 0, 0, 0.707);
+		font-size: 2.4rem;
+		line-height: 3.0rem;
+	}
+	.Landing-allContent {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		width: 90%;
+		height: 90%;
+		margin: bottom 1rem;
+	}
+}

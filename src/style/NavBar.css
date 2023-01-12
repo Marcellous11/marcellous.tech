@@ -1,0 +1,56 @@
+.Navbar {
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+	margin: 0 5%;
+	height: 3.5em;
+	top: 1em; /* Stay on top */
+	transition: top 0.7s, box-shadow .5s;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 3;
+	border-radius: 2em;
+}
+.Navbar:hover {
+	box-shadow: 0 15px 25px rgba(255, 255, 255, 0.441);
+}
+
+.NavBar-button {
+	background-color: rgb(141, 122, 111, 0);
+	/* margin: auto; */
+	float: left;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+	color: azure;
+	/* text-decoration: none; */
+	padding: 0 3vw;
+	transition: transfrom 2s;
+}
+.NavBar-button:hover {
+	transform: rotate(360deg);
+}
+
+@media (max-width: 400px) {
+	.Navbar {
+		position: fixed;
+		display: flex;
+		justify-content: flex-end;
+		width: 90%;
+		margin: 0 5%;
+		height: 3.5em;
+		top: 1em; /* Stay on top */
+		transition: top 0.7s, box-shadow .5s;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 3;
+		border-radius: 2em;
+	}
+	.NavBar-buttonCollection {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+	}
+}

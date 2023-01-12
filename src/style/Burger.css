@@ -1,0 +1,34 @@
+#burger {
+	width: 3.4em;
+	z-index: 2;
+	position: fixed;
+	transition: transform 0.5s, box-shadow .5s;
+	cursor: pointer;
+	border-radius: 1em;
+	background-color: rgba(0, 0, 0, 0.0);
+	left: -200px;
+}
+#burger:hover {
+	/* background-color: rgba(202, 173, 137, 0.32); */
+	transform: scale(1.2);
+	/* box-shadow: 3px 3px 10px 1px rgba(255, 255, 255, 0.393); */
+	border-radius: 1em;
+}
+@keyframes offPage {
+	from {
+		left: 5px;
+		top: 5px;
+	}
+	to {
+		left: -200px;
+	}
+}
+@keyframes onPage {
+	from {
+		left: -200px;
+	}
+	to {
+		left: 5px;
+		top: 5px;
+	}
+}

@@ -1,0 +1,263 @@
+.Contact {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background-color: rgb(95, 95, 93);
+	cursor: default;
+}
+.Contact-me {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
+}
+.Contact-me-headTag {
+	display: inline;
+}
+
+.Contact-me-mainContent-show {
+	display: flex;
+	height: 80%;
+	width: 95%;
+	max-width: 70rem;
+	position: relative;
+	flex-direction: column;
+	margin-top: 1%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Contact-me h2 {
+	font-size: 8rem;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
+	margin: 0;
+	transition: all 2s;
+	display: inline-block;
+}
+
+.main-icon-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 6%;
+}
+.icon-container {
+	/* display: flex; */
+	flex-direction: column;
+	align-items: center;
+}
+.icon-container a {
+	width: 0%;
+	height: 100%;
+}
+
+.appIcon-img {
+	position: relative;
+	width: 12%;
+	z-index: 100;
+	transition: transform .4s, text-shadow 1s;
+	border-radius: 1rem;
+	left: 44%;
+}
+.appIcon-img:hover {
+	transform: scale(1.1);
+}
+
+#iphone {
+	width: 30%;
+	position: absolute;
+	z-index: 0;
+}
+
+.example-container div {
+	background: white;
+	border-radius: 30px;
+	width: 150px;
+	height: 150px;
+}
+
+#rightArrow {
+	animation: right-arrow 1s infinite;
+}
+#leftArrow {
+	animation: left-arrow 1s infinite;
+}
+/* #ME::before {
+	content: "\21E8";
+}
+#ME::after {
+	content: "\00a0 \21E6";
+} */
+#ME {
+	cursor: pointer;
+	transition: transform .5s;
+}
+#ME:hover {
+	color: rgb(213, 185, 157);
+	text-shadow: 0px 0px 10px rgb(213, 185, 157);
+	transform: scale(1.1);
+}
+
+.ADD-h2 {
+	font-size: 5rem;
+}
+
+@keyframes shakeME {
+	0% {
+		rotate: 0deg;
+	}
+	33% {
+		rotate: -10deg;
+	}
+	66% {
+		rotate: 10deg;
+	}
+	100% {
+		rotate: 0deg;
+	}
+}
+
+.arrows {
+	transition: all .5s;
+}
+
+@keyframes right-arrow {
+	0% {
+		transform: translateX(0rem);
+	}
+	25% {
+		transform: translateX(1rem);
+	}
+	50% {
+		transform: translateX(0rem);
+	}
+	75% {
+		transform: translateX(1rem);
+	}
+	100% {
+		transform: translateX(0rem);
+	}
+}
+@keyframes left-arrow {
+	0% {
+		transform: translateX(0rem);
+	}
+	25% {
+		transform: translateX(-1rem);
+	}
+	50% {
+		transform: translateX(0rem);
+	}
+	75% {
+		transform: translateX(-1rem);
+	}
+	100% {
+		transform: translateX(0rem);
+	}
+}
+
+/* iphone */
+@media screen and (max-width: 830px) {
+	.Contact-me h2 {
+		font-size: 5rem;
+		color: rgb(255, 255, 255);
+		text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
+		margin: 0;
+		transition: all 2s;
+		display: block;
+	}
+	#ME {
+		text-align: center;
+	}
+	.Contact-me-headTag {
+		display: inline;
+		margin-top: 4.5rem;
+		height: 12rem;
+		z-index: 101;
+	}
+	#rightArrow {
+		writing-mode: tb-rl;
+		margin: auto;
+	}
+	#leftArrow {
+		writing-mode: vertical-lr;
+		margin: auto;
+	}
+	#iphone {
+		width: 80%;
+		position: absolute;
+		z-index: 0;
+	}
+	#contactH2 {
+		/* margin-top: 4.5rem; */
+		/* color: red; */
+	}
+	.main-icon-container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15%;
+	}
+	.appIcon-img {
+		position: relative;
+		width: 33%;
+		z-index: 100;
+		transition: transform .4s, text-shadow 1s;
+		border-radius: 1rem;
+		left: 33%;
+	}
+	.Contact-me-mainContent-show {
+		display: flex;
+		height: 80%;
+		width: 95%;
+		max-width: 23rem;
+		position: relative;
+		flex-direction: column;
+		margin-top: 1%;
+		justify-content: space-between;
+		align-items: center;
+		/* margin-top: 4.5rem; */
+	}
+}
+
+/* ipad */
+@media (min-width: 830px) and (max-width: 850px) {
+	.main-icon-container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 6%;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	.Contact-me-headTag {
+		display: inline;
+		margin-top: 4.1rem;
+		height: 12rem;
+		z-index: 101;
+	}
+	.main-icon-container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 5%;
+	}
+	.icon-container {
+		width: 7rem;
+	}
+	.appIcon-img {
+		position: relative;
+		width: 70%;
+		z-index: 100;
+		transition: transform .4s, text-shadow 1s;
+		border-radius: 1rem;
+		left: 44%;
+	}
+	#iphone {
+		width: 28%;
+		position: absolute;
+		z-index: 0;
+		top: -9rem;
+		rotate: 90deg;
+	}
+}

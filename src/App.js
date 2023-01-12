@@ -1,25 +1,38 @@
 import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
+import Landing from './modules/Landing';
+import Burger from './modules/Burger';
+import NavBar from './modules/NavBar';
+import Bio from './modules/Bio';
+import WorkHis from './modules/WorkHis';
+import Contact from './modules/Contact';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// let previousScroll = 0;
+	// useEffect(() => {
+	// 	document.getElementsByClassName('App-container')[0].onscroll = function() {
+	// 		let curScroll = document.getElementsByClassName('App-container')[0].scrollTop;
+
+	// 		if (curScroll < previousScroll) {
+	// 			document.getElementById('navbar').style.top = '1em';
+	// 			document.getElementById('burger').style.animation = 'offPage .4s 1 forwards';
+	// 		} else {
+	// 			document.getElementById('navbar').style.top = '-70px';
+	// 			document.getElementById('burger').style.animation = 'onPage .5s 1 forwards';
+	// 		}
+	// 		previousScroll = curScroll;
+	// 	};
+	// });
+	return (
+		<div className="App-container">
+			<NavBar />
+			<Burger />
+			<Landing />
+			<Bio />
+			<WorkHis />
+			<Contact />
+		</div>
+	);
 }
 
 export default App;
