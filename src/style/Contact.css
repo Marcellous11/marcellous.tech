@@ -34,11 +34,14 @@
 	font-size: 8rem;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
-	margin: 0;
+	margin-top: 2rem;
+	margin-bottom: 0;
 	transition: all 2s;
 	display: inline-block;
 }
 
+.Contact-me-headTag h2 {
+}
 .main-icon-container {
 	display: flex;
 	flex-direction: column;
@@ -230,6 +233,14 @@
 		margin-top: 6%;
 		justify-content: space-evenly;
 		align-items: flex-start;
+	}
+	.Contact-me h2 {
+		font-size: 5rem;
+		color: rgb(255, 255, 255);
+		text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
+		margin: 0;
+		transition: all 2s;
+		display: inline-block;
 	}
 	.Contact-me-headTag {
 		display: inline;
