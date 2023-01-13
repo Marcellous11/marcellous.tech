@@ -39,17 +39,20 @@ const Bio = () => {
 				<div className="Bio-aboutMe-blockAndPic">
 					<div className="Bio-aboutMe-info">
 						<p>
-							Hi, my name is <b onMouseOver={goto}>Marcellous Curtis</b> and I am a software developer. I
-							love software development but it took me some time to get here. I first played soccer in
-							college at <b onMouseOver={goto}>Spokane Falls</b> for 2 years. I then serving a mission for
+							Hi, my name is <b onMouseOver={goto}>Marcellous Curtis</b>, and I am a software developer. I
+							love software development, but it took me some time to get here. I first played soccer in
+							college at <b onMouseOver={goto}>Spokane Falls</b> for 2 years. I then served a mission for
 							my <b onMouseOver={goto}>church</b> for another 2 years.
 						</p>
 						<p>
 							For the last year I've been working through the <b onMouseOver={goto}>Springboard</b>{' '}
-							software engineering course online while also working toward a bachlors degree in computer
-							science. I'm also searching for oppurtunities to expand my skills.
+							software engineering course online while also working toward a bachelor’s degree in computer
+							science. I'm also searching for opportunities to expand my skills.
 						</p>
-						<p>I've learned so much this and excited to make forward-thinking and effective software!</p>
+						<p>
+							I've learned so much this year and I am excited to make forward-thinking and effective
+							software!
+						</p>
 					</div>
 
 					<div className="Bio-pictureFrame">

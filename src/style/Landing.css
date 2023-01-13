@@ -4,10 +4,10 @@
 	height: 100vh;
 	margin: auto;
 	background-color: rgba(213, 185, 157, 0.997);
-	/* background-image: url("../images/davinciman2.png"); */
 	justify-content: center;
 	position: relative;
 }
+
 .Landing img {
 	z-index: 0;
 	position: absolute;
@@ -16,11 +16,6 @@
 	opacity: .3;
 	right: 0;
 }
-/* @media screen and (min-width: 400px) {
-	.Landing {
-		background-color: lightgreen;
-	}
-} */
 
 .Landing-allContent {
 	display: flex;
@@ -34,6 +29,7 @@
 
 #name {
 	transition: color 2s;
+	font-weight: 5rem;
 }
 .Landing-allContent > * {
 	font-weight: 500;

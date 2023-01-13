@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import '../style/NavBar.css';
 import { Button } from '@mui/material/';
+import bIcon from '../icons/logo-black.png';
+import wIcon from '../icons/logo-white.png';
+import resume from '../resume/MarcellousC_resume_2.pdf';
 
 const NavBar = () => {
 	let previousScroll = 0;
@@ -21,7 +24,8 @@ const NavBar = () => {
 
 	return (
 		<div className="Navbar" id="navbar">
-			{/* <div className="NavBar-buttonCollection"> */}
+			<img id="icon" src={wIcon} width="1rem" />
+
 			<ul className="NavBar-buttonCollection">
 				<a className="NavBar-button" href="#bio">
 					About Me
@@ -32,9 +36,10 @@ const NavBar = () => {
 				<a className="NavBar-button" href="#contact">
 					Contact Me{' '}
 				</a>
-				<a className="NavBar-button">Resume </a>
+				<a href={resume} target="_blank" className="NavBar-button">
+					Resume{' '}
+				</a>
 			</ul>
-			{/* </div> */}
 		</div>
 	);
 };

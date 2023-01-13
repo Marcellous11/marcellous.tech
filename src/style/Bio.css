@@ -62,12 +62,13 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 45%;
+	width: 54%;
 	background-color: rgb(90, 91, 59);
 	border-radius: 2em;
 	padding: 1em;
 	overflow: hidden;
 	transition: box-shadow .5s, transform .5s;
+	min-width: 300px;
 }
 
 .Bio-aboutMe-info p b {
@@ -87,9 +88,9 @@
 
 .Bio-aboutMe-info p {
 	line-height: 1.6rem;
-	/* height: 30%; */
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	display: block;
+	margin: 0.9rem 0px;
 }
 .Bio-pictureFrame {
 	background-color: rgba(209, 195, 176, 0.834);

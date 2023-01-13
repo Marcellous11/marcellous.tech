@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../style/WorkHis.css';
+import hands from '../images/For_Marcellous 2.png';
 
 const WorkHis = () => {
 	useEffect(() => {
@@ -16,7 +17,6 @@ const WorkHis = () => {
 		});
 		e.target.style.color = 'white';
 		document.querySelectorAll('.WorkHis-description div').forEach((p) => {
-			// console.log(p);
 			if (!p.classList.contains(e.target.classList)) p.style.display = 'none';
 			else {
 				p.style.display = '';
@@ -26,6 +26,7 @@ const WorkHis = () => {
 
 	return (
 		<section className="WorkHis" id="workhis">
+			<img src={hands} />
 			<div className="WorkHis-collection">
 				<div className="WorkHis-collection-hist">
 					<h2>Experience</h2>
@@ -50,7 +51,7 @@ const WorkHis = () => {
 									</li>
 									<li>Back-end web development, databases, data structures and algorithms</li>
 									<li>
-										It includes learning resources, practice exercises, projects, and{' '}
+										Includes learning resources, practice exercises, projects, and{' '}
 										<b>career-related</b> coursework.
 									</li>
 								</ul>
@@ -74,11 +75,10 @@ const WorkHis = () => {
 
 							<div className="sol">
 								<ul>
-									<li>Sold Solar systems door to door.</li>
-									<li> Set up and finalized appointments.</li>
-									<li>Sold a total 56 kW in 1 summer</li>
-									<li>Signed up 6 houses and had panels installed.</li>
-									<li>Knocked on average 100 doors per day</li>
+									<li>Sold solar systems door to door, knocking on average 100 doors per day</li>
+									<li> Networked with locals to help them find affordable energy options</li>
+									<li>Sold a total of 56 kW in 1 summer</li>
+									<li>Signed up 6 houses and oversaw panel installation.</li>
 									<li>Transitioned from knocking to closing in 2 months</li>
 								</ul>
 								<div className="WorkHis-description-skills sol">
@@ -93,15 +93,17 @@ const WorkHis = () => {
 
 							<div className="mish">
 								<ul>
-									<li>Trained missionaries to identify goals and find path to accomplish them.</li>
 									<li>
-										Lead multiple trainings for multiple zones which contain upwards of 20+
-										missionaries.
+										Led groups of 10-12 volunteers, conducted weekly training meetings, followed up
+										on goals, and created weekly progress reports
 									</li>
 									<li>
-										These trainings consisted of goal setting, planning, and independent study
-										Successfully collaborated with other leaders in the mission to set goals and
-										make plans for 250+ missionaries.
+										Planned, organized, and taught 10 workshops on goal setting, relationship
+										building, and leadership skills
+									</li>
+									<li>
+										Increased volunteer effectiveness by providing training in individual
+										communication, problem-solving, and productivity skills for 15 missionaries
 									</li>
 								</ul>
 								<div className="WorkHis-description-skills mish">

@@ -1,6 +1,6 @@
 #burger {
 	width: 3.4em;
-	z-index: 2;
+	z-index: 104;
 	position: fixed;
 	transition: transform 0.5s, box-shadow .5s;
 	cursor: pointer;

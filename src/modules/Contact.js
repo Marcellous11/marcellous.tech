@@ -1,19 +1,26 @@
 import React, { useEffect } from 'react';
 import '../style/NavBar.css';
 import '../style/Contact.css';
-import anime from 'animejs/lib/anime.es.js';
-import Sketch from 'react-p5';
 import github_icon from '../images/github_icon.png';
 import gmailIcon from '../images/gmail_icon.png';
 import linkedInIcon from '../images/linkedin_icon.png';
 import iphone from '../images/cell_ousphone.png';
 import { motion } from 'framer-motion';
+import bIcon from '../icons/logo-black.png';
 
 const Contact = () => {
 	useEffect(() => {
 		const MEtag = document.querySelector('#ME');
 		MEtag.style.animation = 'shakeME 1s infinite';
+		//start iphone display 0
 		document.querySelector('#Contact-me-mainContent').style.opacity = '0';
+		if (window.screen.availWidth === 844) {
+			document.querySelector('.Contact-me-headTag').style.marginTop = ' 7rem';
+		} else if (window.screen.availWidth === 390) {
+			document.querySelector('.Contact-me-headTag').style.marginTop = ' 7rem';
+		} else {
+			document.querySelector('.Contact-me-headTag').style.marginTop = ' 24rem';
+		}
 	});
 
 	const changeH2 = () => {
@@ -23,18 +30,20 @@ const Contact = () => {
 		});
 		document.querySelectorAll('.arrows').forEach((a) => {
 			a.style.opacity = '0';
-			a.style.width = '0';
-			a.style.height = '0';
+			a.style.display = 'none';
 
 			a.style.transition = ' width .2s';
 		});
 	};
 
+	//shows iphone while hidding arrows around "ME"
 	const showPhone = () => {
 		console.log(document.querySelector('#Contact-me-mainContent'));
 		let container = document.querySelector('#Contact-me-mainContent');
 		container.style.opacity = '1';
+
 		container.style.transition = ' all .5s';
+		document.querySelector('.Contact-me-headTag').style.marginTop = '0';
 	};
 
 	const change = () => {
@@ -80,20 +89,12 @@ const Contact = () => {
 						</div>
 					</div>
 					<img id="iphone" src={iphone} />
-					{/* <div className="example-container">
-							<motion.div
-								initial={{ opacity: 0 }}
-								whileInView={{ opacity: 1 }}
-								whileHover={{ scale: 1.2 }}
-								whileTap={{ scale: 0.8 }}
-							>
-								<img className="appIcon" src={gmailIcon} style={{ width: '100%' }} />
-							</motion.div>
-						</div> */}
 				</div>
 			</div>
-
-			<script src="static/js/p5.js"> </script>
+			<footer>
+				<p>Built & Designed by Marcellous Curtis Jr.</p>
+				<img src={bIcon} />
+			</footer>
 		</section>
 	);
 };

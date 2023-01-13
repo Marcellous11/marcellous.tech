@@ -1,6 +1,8 @@
 * {
 	box-sizing: border-box;
 	transition: all .5s ease;
+	/* font-family: 'Comfortaa', cursive; */
+	font-family: 'Lato', sans-serif;
 }
 
 .WorkHis {
@@ -10,20 +12,32 @@
 	background-color: rgb(159, 90, 64);
 	flex-direction: row;
 	justify-content: center;
+	position: relative;
+}
+
+.WorkHis img {
+	z-index: 0;
+	position: absolute;
+
+	width: 100%;
+	opacity: .3;
+	right: 0;
+	top: -50%;
 }
 
 .WorkHis-collection {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	flex-direction: row;
 	align-items: center;
 	margin-bottom: 3em;
 	justify-content: center;
+	z-index: 1;
 }
 
 .WorkHis-collection h2 {
-	font-size: 2em;
+	font-size: 2rem;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.513);
 	margin: 2em 0;
@@ -37,18 +51,19 @@
 	justify-content: space-evenly;
 	width: 100%;
 	height: 100%;
+	max-width: 1360px;
 }
 .WorkHis-collection-hist h2 {
-	font-size: 14rem;
+	font-size: 12rem;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.513);
 	margin: 0;
 	transition: all 1s;
 }
 
-.WorkHis-position h3 {
-	font-size: 1.5em;
-}
+/* .WorkHis-position h3 {
+	font-size: 1.9rem;
+} */
 .WorkHis-workContent {
 	display: flex;
 	height: 40%;
@@ -71,7 +86,7 @@
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0);
 	transition: all .5s;
-
+	font-size: 2rem;
 	color: gray;
 }
 .WorkHis-titles h3:hover {
@@ -86,10 +101,8 @@
 	padding-right: 1rem;
 	margin-left: 1rem;
 	width: 80%;
-	background-color: rgba(0, 0, 0, 0.083);
+	background-color: rgba(146, 83, 59);
 	border-radius: 0 1em 1em 0;
-	/* flex: 80%; */
-	/* overflow: hidden; */
 }
 .WorkHis-description div ul {
 	margin-bottom: 0;
@@ -98,19 +111,14 @@
 .WorkHis-description div ul li {
 	/* display: block; */
 	line-height: 1.9rem;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	color: rgb(1, 0, 0);
 	margin: 0;
 	border-radius: 0 1em 1em 0;
 }
 .WorkHis-description div ul li b {
-	color: rgb(57, 57, 57);
+	color: rgb(184, 183, 183);
 }
-
-/* parent element to ul and grid */
-/* .WorkHis-description div {
-	display: flex;
-} */
 
 /*  the skill collection */
 .WorkHis-description-skills {
@@ -125,6 +133,7 @@
 .WorkHis-description-skills p {
 	display: block;
 	color: white;
+	font-size: 1.3rem;
 	margin: 3%;
 }
 
@@ -163,7 +172,7 @@
 		margin: 0rem;
 		margin-top: 1rem;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.083);
+		background-color: rgba(146, 83, 59);
 		border-radius: 0 0 1em 1em;
 		/* flex: 80% 1; */
 	}
@@ -174,6 +183,15 @@
 		color: rgb(1, 0, 0);
 		margin: 0;
 		border-radius: 0 1em 1em 0;
+	}
+	.WorkHis img {
+		z-index: 0;
+		position: absolute;
+		/* height: 100%; */
+		width: 100%;
+		opacity: .3;
+		right: 0;
+		top: -7rem;
 	}
 }
 
@@ -202,7 +220,7 @@
 	}
 	.WorkHis-collection-hist h2 {
 		font-size: 3.7rem;
-		margin: 1rem 0;
+		margin: 0rem 0;
 		margin-bottom: 1rem;
 		rotate: 180deg;
 		writing-mode: tb-rl;
@@ -216,6 +234,16 @@
 		padding: .8rem;
 		border-radius: 1em 1em 0 0;
 	}
+	.WorkHis-titles h3 {
+		position: relative;
+		border-radius: 2em;
+		margin: 0 3%;
+		cursor: pointer;
+		background-color: rgba(0, 0, 0, 0);
+		transition: all .5s;
+		font-size: 1.2rem;
+		color: gray;
+	}
 	.WorkHis-workContent {
 		display: flex;
 		height: 139%;
@@ -227,15 +255,16 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		margin: 0rem;
+		margin-top: 1rem;
 		margin-top: rem;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.083);
+		background-color: rgba(146, 83, 59);
 		border-radius: 0 0 1em 1em;
 	}
 	.WorkHis-description div ul li {
 		/* display: block; */
 		line-height: 1.3rem;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: rgb(1, 0, 0);
 		margin: 0;
 		border-radius: 0 1em 1em 0;
@@ -243,11 +272,20 @@
 	.WorkHis-description div ul {
 		margin: 0;
 	}
+
 	/* individual boxes */
 	.WorkHis-description-skills p {
 		display: block;
 		color: white;
-		padding: 0;
-		margin: .35rem;
+		font-size: 1rem;
+		margin: 1%;
+	}
+	.WorkHis img {
+		z-index: 0;
+		position: absolute;
+		width: 100%;
+		opacity: .3;
+		right: 0;
+		top: -19rem;
 	}
 }

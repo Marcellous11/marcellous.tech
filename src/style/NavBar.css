@@ -1,7 +1,8 @@
 .Navbar {
 	position: fixed;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
+	align-items: center;
 	width: 90%;
 	margin: 0 5%;
 	height: 3.5em;
@@ -15,9 +16,17 @@
 	box-shadow: 0 15px 25px rgba(255, 255, 255, 0.441);
 }
 
+#icon {
+	/* height: 2rem; */
+	width: 9%;
+}
+.Navbar-Content {
+	margin: auto;
+}
+
 .NavBar-button {
 	background-color: rgb(141, 122, 111, 0);
-	/* margin: auto; */
+	margin: auto;
 	float: left;
 	display: block;
 	text-align: center;
@@ -25,6 +34,7 @@
 	border: none;
 	text-decoration: none;
 	color: azure;
+	font-size: 1.1rem;
 	/* text-decoration: none; */
 	padding: 0 3vw;
 	transition: transfrom 2s;
@@ -52,5 +62,13 @@
 		margin: 0;
 		padding: 0;
 		align-items: center;
+	}
+	.NavBar-button {
+		font-size: 1rem;
+	}
+	#icon {
+		/* height: 2rem; */
+		width: 10%;
+		display: none;
 	}
 }

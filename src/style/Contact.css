@@ -11,6 +11,7 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
+	justify-content: space-around;
 	height: 100%;
 	width: 100%;
 }
@@ -25,7 +26,6 @@
 	max-width: 70rem;
 	position: relative;
 	flex-direction: column;
-	margin-top: 1%;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -34,18 +34,18 @@
 	font-size: 8rem;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
-	margin-top: 2rem;
+	margin-top: 3.6rem;
 	margin-bottom: 0;
 	transition: all 2s;
 	display: inline-block;
 }
 
-.Contact-me-headTag h2 {
-}
 .main-icon-container {
 	display: flex;
 	flex-direction: column;
 	margin-top: 6%;
+	/* move iphone up and down */
+	/* height: 16rem; */
 }
 .icon-container {
 	/* display: flex; */
@@ -88,12 +88,7 @@
 #leftArrow {
 	animation: left-arrow 1s infinite;
 }
-/* #ME::before {
-	content: "\21E8";
-}
-#ME::after {
-	content: "\00a0 \21E6";
-} */
+
 #ME {
 	cursor: pointer;
 	transition: transform .5s;
@@ -101,11 +96,31 @@
 #ME:hover {
 	color: rgb(213, 185, 157);
 	text-shadow: 0px 0px 10px rgb(213, 185, 157);
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 .ADD-h2 {
 	font-size: 5rem;
+}
+
+footer {
+	display: flex;
+	position: relative;
+	top: -4rem;
+	margin: 0;
+	justify-content: space-between;
+	align-items: center;
+	width: 94%;
+}
+footer p {
+	/* align-items: center; */
+	text-align: center;
+	margin-left: 3rem;
+	margin-bottom: .5rem;
+}
+footer img {
+	align-items: center;
+	width: 5rem;
 }
 
 @keyframes shakeME {
@@ -164,22 +179,30 @@
 
 /* iphone */
 @media screen and (max-width: 830px) {
+	.Contact-me-headTag {
+		display: inline;
+		margin-top: 3.8rem;
+		height: 12rem;
+		z-index: 101;
+	}
 	.Contact-me h2 {
 		font-size: 5rem;
 		color: rgb(255, 255, 255);
 		text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
-		margin: 0;
+		line-height: 5.4rem;
+		margin-top: 3.6rem;
+		margin-bottom: 0;
+		margin-left: 0rem;
 		transition: all 2s;
 		display: block;
 	}
+
 	#ME {
+		cursor: pointer;
+		transition: transform .5s;
+		margin-top: 0;
+		margin-left: 2rem;
 		text-align: center;
-	}
-	.Contact-me-headTag {
-		display: inline;
-		margin-top: 4.5rem;
-		height: 12rem;
-		z-index: 101;
 	}
 	#rightArrow {
 		writing-mode: tb-rl;
@@ -194,10 +217,7 @@
 		position: absolute;
 		z-index: 0;
 	}
-	#contactH2 {
-		/* margin-top: 4.5rem; */
-		/* color: red; */
-	}
+
 	.main-icon-container {
 		display: flex;
 		flex-direction: column;
@@ -218,10 +238,32 @@
 		max-width: 23rem;
 		position: relative;
 		flex-direction: column;
-		margin-top: 1%;
+		margin-top: 8%;
 		justify-content: space-between;
 		align-items: center;
 		/* margin-top: 4.5rem; */
+	}
+	footer {
+		display: flex;
+		position: relative;
+		/* move footer up and down */
+		top: -3rem;
+		margin: 0;
+		justify-content: space-between;
+		align-items: center;
+		width: 94%;
+	}
+	footer p {
+		/* align-items: center; */
+		text-align: center;
+		margin-left: .9rem;
+		margin-bottom: .3rem;
+		margin-top: 0;
+	}
+	footer img {
+		align-items: center;
+		width: 5rem;
+		margin-left: 1rem;
 	}
 }
 
@@ -238,14 +280,16 @@
 		font-size: 5rem;
 		color: rgb(255, 255, 255);
 		text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.835);
-		margin: 0;
+		/* move "contactme click" */
+		margin-top: 3.5rem;
 		transition: all 2s;
 		display: inline-block;
 	}
 	.Contact-me-headTag {
 		display: inline;
 		margin-top: 4.1rem;
-		height: 12rem;
+		/* move iphone up and down */
+		height: 16rem;
 		z-index: 101;
 	}
 	.main-icon-container {
@@ -270,5 +314,27 @@
 		z-index: 0;
 		top: -9rem;
 		rotate: 90deg;
+	}
+	footer {
+		display: flex;
+		position: relative;
+		/* move footer up and down */
+		top: -2rem;
+		margin: 0;
+		justify-content: space-between;
+		align-items: center;
+		width: 94%;
+	}
+	footer p {
+		/* align-items: center; */
+		text-align: center;
+		margin-left: .9rem;
+		margin-bottom: .3rem;
+		margin-top: 0;
+	}
+	footer img {
+		align-items: center;
+		width: 5rem;
+		margin-left: 1rem;
 	}
 }
