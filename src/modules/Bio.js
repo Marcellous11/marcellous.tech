@@ -6,6 +6,7 @@ import tech from '../images/techpattern_small.png';
 import { motion } from 'framer-motion';
 
 const Bio = () => {
+	/**when the mouse hovers over any one cases a corresponding picture is shown*/
 	const goto = (e) => {
 		const href = document.createElement('a');
 		href.href = '#deskPic';
@@ -29,7 +30,6 @@ const Bio = () => {
 		}
 		href.click();
 	};
-
 	return (
 		<section className="Bio" id="bio">
 			<img id="tech" src={tech} />

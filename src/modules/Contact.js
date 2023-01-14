@@ -12,7 +12,7 @@ const Contact = () => {
 	useEffect(() => {
 		const MEtag = document.querySelector('#ME');
 		MEtag.style.animation = 'shakeME 1s infinite';
-		//start iphone display 0
+		/**hides iphone and changes start position for initial contact me screen*/
 		document.querySelector('#Contact-me-mainContent').style.opacity = '0';
 		if (window.screen.availWidth === 844) {
 			document.querySelector('.Contact-me-headTag').style.marginTop = ' 7rem';
@@ -22,7 +22,7 @@ const Contact = () => {
 			document.querySelector('.Contact-me-headTag').style.marginTop = ' 24rem';
 		}
 	});
-
+	/**when cliked the arround "ME" disappear and the font for contact me gets smaller*/
 	const changeH2 = () => {
 		document.querySelectorAll('.Contact-me h2').forEach((a) => {
 			a.style.fontSize = '5rem';
@@ -36,7 +36,7 @@ const Contact = () => {
 		});
 	};
 
-	//shows iphone while hidding arrows around "ME"
+	/**shows iphone while hidding arrows around "ME"*/
 	const showPhone = () => {
 		console.log(document.querySelector('#Contact-me-mainContent'));
 		let container = document.querySelector('#Contact-me-mainContent');

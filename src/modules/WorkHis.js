@@ -4,7 +4,7 @@ import hands from '../images/For_Marcellous 2.png';
 
 const WorkHis = () => {
 	useEffect(() => {
-		//setting workhistory box
+		/**This sets the work history box so the first title is colored white */
 		document.querySelector('.WorkHis-titles .sb').style.color = ' rgb(255, 255, 255)';
 		document.querySelector('.WorkHis-description .mish').style.display = 'none';
 		document.querySelector('.WorkHis-description .sol').style.display = 'none';
@@ -12,9 +12,11 @@ const WorkHis = () => {
 
 	//onClick function changes background for h3 and display for p
 	const showJob = (e) => {
+		/**this removes all colors from the work history titles */
 		document.querySelectorAll('.WorkHis-titles h3').forEach((element) => {
 			element.style.color = '';
 		});
+		/**this colors the target event white and then displays corresposnding work history */
 		e.target.style.color = 'white';
 		document.querySelectorAll('.WorkHis-description div').forEach((p) => {
 			if (!p.classList.contains(e.target.classList)) p.style.display = 'none';
@@ -46,7 +48,7 @@ const WorkHis = () => {
 							<div className="sb">
 								<ul>
 									<li>
-										800-hour software engineering course that covers <b>key aspects</b> of front-end
+										800-hour software engineering course that coverskey aspects of <b>front-end</b>{' '}
 										web development
 									</li>
 									<li>Back-end web development, databases, data structures and algorithms</li>

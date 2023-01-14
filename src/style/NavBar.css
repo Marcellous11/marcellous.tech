@@ -17,8 +17,7 @@
 }
 
 #icon {
-	/* height: 2rem; */
-	width: 9%;
+	width: 6.5rem;
 }
 .Navbar-Content {
 	margin: auto;
@@ -35,7 +34,6 @@
 	text-decoration: none;
 	color: azure;
 	font-size: 1.1rem;
-	/* text-decoration: none; */
 	padding: 0 3vw;
 	transition: transfrom 2s;
 }
@@ -67,7 +65,6 @@
 		font-size: 1rem;
 	}
 	#icon {
-		/* height: 2rem; */
 		width: 10%;
 		display: none;
 	}

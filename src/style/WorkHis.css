@@ -1,7 +1,6 @@
 * {
 	box-sizing: border-box;
 	transition: all .5s ease;
-	/* font-family: 'Comfortaa', cursive; */
 	font-family: 'Lato', sans-serif;
 }
 
@@ -60,13 +59,9 @@
 	margin: 0;
 	transition: all 1s;
 }
-
-/* .WorkHis-position h3 {
-	font-size: 1.9rem;
-} */
 .WorkHis-workContent {
 	display: flex;
-	height: 40%;
+	height: 52%;
 	width: 80%;
 	border-radius: 2em;
 }
@@ -103,13 +98,13 @@
 	width: 80%;
 	background-color: rgba(146, 83, 59);
 	border-radius: 0 1em 1em 0;
+	overflow: hidden;
 }
 .WorkHis-description div ul {
 	margin-bottom: 0;
 }
 /* li with job description */
 .WorkHis-description div ul li {
-	/* display: block; */
 	line-height: 1.9rem;
 	font-size: 1.4rem;
 	color: rgb(1, 0, 0);
@@ -141,6 +136,7 @@
 @media (max-width: 521px) {
 	.WorkHis-workContent {
 		flex-direction: column;
+		height: 75%;
 	}
 	.WorkHis-collection-hist {
 		display: flex;
@@ -162,22 +158,20 @@
 		background-color: rgba(0, 0, 0, 0.274);
 		padding: .8rem;
 		border-radius: 1em 1em 0 0;
-		/* flex: 20% 1; */
 	}
 	.WorkHis-description {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		/* padding-top: 1rem; */
 		margin: 0rem;
 		margin-top: 1rem;
 		width: 100%;
+		height: 80%;
 		background-color: rgba(146, 83, 59);
 		border-radius: 0 0 1em 1em;
-		/* flex: 80% 1; */
+		overflow-y: scroll;
 	}
 	.WorkHis-description div ul li {
-		/* display: block; */
 		line-height: 1.4rem;
 		font-size: 1.2rem;
 		color: rgb(1, 0, 0);
@@ -187,7 +181,6 @@
 	.WorkHis img {
 		z-index: 0;
 		position: absolute;
-		/* height: 100%; */
 		width: 100%;
 		opacity: .3;
 		right: 0;
@@ -262,7 +255,6 @@
 		border-radius: 0 0 1em 1em;
 	}
 	.WorkHis-description div ul li {
-		/* display: block; */
 		line-height: 1.3rem;
 		font-size: 1.1rem;
 		color: rgb(1, 0, 0);

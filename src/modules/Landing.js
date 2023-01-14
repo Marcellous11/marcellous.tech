@@ -8,7 +8,7 @@ const Landing = () => {
 		const r = Math.floor(Math.random() * 2);
 		return r === 0 ? 'rgb(101, 103, 67)' : 'rgb(255, 255, 255)';
 	}
-
+	/**changes the color of name randomly between white and green */
 	const changeColor = (e) => {
 		const name = document.querySelectorAll('#name');
 		setInterval(function() {

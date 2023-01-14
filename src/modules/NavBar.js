@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import '../style/NavBar.css';
-import { Button } from '@mui/material/';
-import bIcon from '../icons/logo-black.png';
 import wIcon from '../icons/logo-white.png';
-import resume from '../resume/MarcellousC_resume_2.pdf';
+import resume from '../resume/MarcellousC_resume_3.pdf';
 
 const NavBar = () => {
 	let previousScroll = 0;
+	/**if scrolling up the menu bar is shown. if scrolling down the menu bar is hidden and the menu burger is shown */
 	useEffect(() => {
 		document.querySelector('.App-container').onscroll = function() {
 			let curScroll = document.querySelector('.App-container').scrollTop;

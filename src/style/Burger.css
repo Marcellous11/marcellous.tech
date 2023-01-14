@@ -9,9 +9,7 @@
 	left: -200px;
 }
 #burger:hover {
-	/* background-color: rgba(202, 173, 137, 0.32); */
 	transform: scale(1.2);
-	/* box-shadow: 3px 3px 10px 1px rgba(255, 255, 255, 0.393); */
 	border-radius: 1em;
 }
 @keyframes offPage {
