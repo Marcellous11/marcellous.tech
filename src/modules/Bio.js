@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../style/Bio.css';
 import profilePic from '../images/profile_pic.jpg';
 import code from '../images/Screenshot 2023-01-07 at 12.45.32 AM.png';
@@ -6,29 +6,37 @@ import tech from '../images/techpattern_small.png';
 import { motion } from 'framer-motion';
 
 const Bio = () => {
-	/**when the mouse hovers over any one cases a corresponding picture is shown*/
+	/**on click  corresponding picture is shown*/
+
+	useEffect(() => {
+		document.querySelector('#profilePic').style.display = 'block';
+	});
 	const goto = (e) => {
-		const href = document.createElement('a');
-		href.href = '#deskPic';
+		document.querySelectorAll('.Bio-pictureFrame img').forEach((img) => {
+			img.style.display = 'none';
+		});
+		document.querySelectorAll('.Bio-pictureFrame a').forEach((a) => {
+			a.style.display = 'none';
+		});
+
 		switch (e.target.innerText) {
 			case 'Spokane Falls':
-				href.href = '#soccerPic';
+				document.querySelector('#soccerPic').style.display = 'block';
+				document.querySelectorAll('.Bio-pictureFrame a')[1].style.display = 'block';
 				break;
 			case 'church':
-				href.href = '#missionPic';
-
+				document.querySelector('#missionPic').style.display = 'block';
+				document.querySelectorAll('.Bio-pictureFrame a')[2].style.display = 'block';
 				break;
 			case 'Springboard':
-				href.href = '#deskPic';
-				break;
-			case 'About Me':
-				href.href = '#profilePic';
+				document.querySelector('#deskPic').style.display = 'block';
+				document.querySelectorAll('.Bio-pictureFrame a')[3].style.display = 'block';
 				break;
 			case 'Marcellous Curtis':
-				href.href = '#profilePic';
+				document.querySelector('#profilePic').style.display = 'block';
+				document.querySelectorAll('.Bio-pictureFrame a')[0].style.display = 'block';
 				break;
 		}
-		href.click();
 	};
 	return (
 		<section className="Bio" id="bio">
@@ -39,15 +47,15 @@ const Bio = () => {
 				<div className="Bio-aboutMe-blockAndPic">
 					<div className="Bio-aboutMe-info">
 						<p>
-							Hi, my name is <b onMouseOver={goto}>Marcellous Curtis</b>, and I am a software developer. I
+							Hi, my name is <b onClick={goto}>Marcellous Curtis</b>, and I am a software developer. I
 							love software development, but it took me some time to get here. I first played soccer in
-							college at <b onMouseOver={goto}>Spokane Falls</b> for 2 years. I then served a mission for
-							my <b onMouseOver={goto}>church</b> for another 2 years.
+							college at <b onClick={goto}>Spokane Falls</b> for 2 years. I then served a mission for my{' '}
+							<b onClick={goto}>church</b> for another 2 years.
 						</p>
 						<p>
-							For the last year I've been working through the <b onMouseOver={goto}>Springboard</b>{' '}
-							software engineering course online while also working toward a bachelor’s degree in computer
-							science. I'm also searching for opportunities to expand my skills.
+							For the last year I've been working through the <b onClick={goto}>Springboard</b> software
+							engineering course online while also working toward a bachelor’s degree in computer science.
+							I'm also searching for opportunities to expand my skills.
 						</p>
 						<p>
 							I've learned so much this year and I am excited to make forward-thinking and effective
@@ -63,7 +71,7 @@ const Bio = () => {
 						<a className="contain-inner">
 							<img
 								id="soccerPic"
-								src="https://scontent-dfw5-2.xx.fbcdn.net/v/t31.18172-8/11879150_1640924332815466_9170596703221788037_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=SzxrQAtljl8AX89BRlL&_nc_ht=scontent-dfw5-2.xx&oh=00_AfDpOLRtd8Rd4KY-N-UTswU2tVFDImo1PKm0Mv06fIz8fA&oe=63DFB0DE"
+								src="https://images.unsplash.com/photo-1574772135913-d519461c3996?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
 							/>
 						</a>
 
@@ -79,7 +87,10 @@ const Bio = () => {
 						</a>
 
 						<a href="https://www.springboard.com/" target="_blank" className="contain-inner">
-							<img id="deskPic" src={code} />
+							<img
+								id="deskPic"
+								src="https://cdn-images-1.medium.com/max/1200/1*PXENf9nDzZV0uwxKd-PwgA.png"
+							/>
 						</a>
 					</div>
 				</div>

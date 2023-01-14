@@ -14,9 +14,9 @@ const Contact = () => {
 		MEtag.style.animation = 'shakeME 1s infinite';
 		/**hides iphone and changes start position for initial contact me screen*/
 		document.querySelector('#Contact-me-mainContent').style.opacity = '0';
-		if (window.screen.availWidth === 844) {
-			document.querySelector('.Contact-me-headTag').style.marginTop = ' 7rem';
-		} else if (window.screen.availWidth === 390) {
+		if (window.screen.availWidth < 500) {
+			document.querySelector('.Contact-me-headTag').style.marginTop = ' 4rem';
+		} else if (window.screen.availWidth > 500 && window.screen.availWidth < 800) {
 			document.querySelector('.Contact-me-headTag').style.marginTop = ' 7rem';
 		} else {
 			document.querySelector('.Contact-me-headTag').style.marginTop = ' 24rem';
@@ -25,7 +25,8 @@ const Contact = () => {
 	/**when cliked the arround "ME" disappear and the font for contact me gets smaller*/
 	const changeH2 = () => {
 		document.querySelectorAll('.Contact-me h2').forEach((a) => {
-			a.style.fontSize = '5rem';
+			a.style.fontSize = '3rem';
+			a.style.lineHeight = '3rem';
 			a.style.transition = ' all .5s';
 		});
 		document.querySelectorAll('.arrows').forEach((a) => {

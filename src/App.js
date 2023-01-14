@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './style/App.css';
 import Landing from './modules/Landing';
 import Burger from './modules/Burger';

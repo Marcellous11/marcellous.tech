@@ -10,10 +10,7 @@ const NavBar = () => {
 		document.querySelector('.App-container').onscroll = function() {
 			let curScroll = document.querySelector('.App-container').scrollTop;
 
-			if (curScroll < previousScroll) {
-				document.getElementById('navbar').style.top = '1em';
-				document.getElementById('burger').style.animation = 'offPage .4s 1 forwards';
-			} else {
+			if (curScroll > previousScroll) {
 				document.getElementById('navbar').style.top = '-70px';
 				document.getElementById('burger').style.animation = 'onPage .5s 1 forwards';
 			}
