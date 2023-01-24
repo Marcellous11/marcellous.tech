@@ -1,4 +1,6 @@
-# [**marcellous.tech**](marcellous.tech)
+# marcellous.tech
+
+--->[**link here**](marcellous.tech)
 
 This is my first personal webpage built and designed by me! It was a ton of fun to write and I'm love the feeling of it. If you come across easier or more effective ways of writing some of the JavaScript or CSS I'd love to see your code!
 
