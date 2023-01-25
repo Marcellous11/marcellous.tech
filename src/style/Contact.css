@@ -243,7 +243,7 @@ footer img {
 		display: flex;
 		position: relative;
 		/* move footer up and down */
-		top: -9.5rem;
+		top: -5.5rem;
 		margin: 0;
 		justify-content: space-between;
 		align-items: center;

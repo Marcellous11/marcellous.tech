@@ -13,7 +13,7 @@
 @media (max-width: 521px) {
 	.App-container {
 		background-color: rgb(136, 117, 108);
-		height: 90vh;
+		height: 95vh;
 		width: 100vw;
 		overflow-y: scroll;
 		scroll-snap-type: y proximity;
