@@ -1,13 +1,68 @@
-# [**marcellous.tech**](http://marcellous.tech/)
+![logo-avocado](https://user-images.githubusercontent.com/31599945/227680812-31995472-bc3f-492b-8209-cad7b51ad26e.png)
+
+# marcellous.tech 1.0
+
+This is the first personal website I've ever created. It's mainly css but I had alot of fun making!
+
+
+## Demo
+
+![mTechGIF1 0](https://user-images.githubusercontent.com/31599945/227681152-f56f2579-e077-4cf9-83da-3e229bf5ef6c.gif)
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Marcellous11/marcellous.tech.git
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Tech Stack
+
+**Client:** React 
 
 
 
-This is my first personal webpage built and designed by me! It was a ton of fun to write and I'm love the feeling of it. If you come across easier or more effective ways of writing some of the JavaScript or CSS I'd love to see your code!
+
+## Lessons Learned
+
+While making multiple custom CSS classes taught me a lot about CSS, I will definitely utilities libraries like Material UI in the future. These kinds of libraries come with a lot of components to make life much easier.
+
+## Acknowledgements
 
 
-## Contributing
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [Background Design](https://www.instagram.com/lilli_vehikite/)
 
-Pull requests are welcome.  If you come across an easier and or more effective ways of writing something I'd love to see your code! If you do fork this website and use it's code please reference this website to give credit back to its creator ( me !). 
 
-## Contributions 
-Shout out to [**Lilli Vehikite**](https://www.instagram.com/lilli_vehikite_design/), who is a design professional. She helping me with some of the layout design and she also drew the two hands touching on the "Experience" page! She's extremely talented and I'm thankful for her help.  
+## 🚀 About Me
+I'm a full stack developer currently living in Frisco TX. I love making websites that are useful and make life easier for people. That feeds into my love of making effective software that helps people in real life!
+
+## 🛠 Skills
+JavaScript, DOM Manipulation, Git, Ajax, jQuery, Python, Flask, SQL, PostgreSQL, Node, Express, React, Object Oriented Programming, and Redux.
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://marcellous.tech/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-curtis-jr/)
+
+
